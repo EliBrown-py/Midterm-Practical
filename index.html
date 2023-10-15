@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm-Practical</title>
+    <style>
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: rgb(59, 56, 56);
+            color: white;
+            text-align: center; 
+            line-height: 150px; 
+        }
+        h1 {
+            font-size: 24px;
+        }
+        ul{
+            background-color: lightgreen;
+            padding-bottom: 4px;
+            max-width: 200px;
+            list-style: disc;
+        }
+        ol{
+            background-color: goldenrod;
+            padding-bottom: 4px;
+            max-width: 200px;
+        }
+
+    </style>
+    <script src="Midterm.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ten Most Populated Countries</h1>
+    </header>
+
+    <ul id="displayCountries"></ul>
+
+    <ol>
+        <li>C - Create/Add new Country</li>
+        <li>R - Read population</li>
+        <li>U - Update/Edit Country</li>
+        <li>D - Delete Country</li>
+    </ol>
+
+    <p>
+        <label for="action">Choose an action: </label>
+        <select id="action">
+            <option value="C">Create</option>
+            <option value="R">Read</option>
+            <option value="U">Update</option>
+            <option value="D">Delete</option>
+        </select>
+    <button onclick="performAction()">Submit</button>
+    </p>
+    <p class = "result"></p>
+</body>
+</html>
